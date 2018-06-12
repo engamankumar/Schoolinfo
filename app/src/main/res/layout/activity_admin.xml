@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#26C6DA"
+    tools:context="com.example.aman.schoolinfo.admin">
+
+    <TextView
+        android:id="@+id/schoolname"
+        android:layout_width="358dp"
+        android:layout_height="59dp"
+        android:background="@android:color/background_light"
+        android:text="Send Message"
+        android:textAlignment="center"
+        android:textColor="#26C6DA"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/class1"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="class 1"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schoolname" />
+
+    <CheckBox
+        android:id="@+id/class2"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="17dp"
+        android:text="class 2"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/class1"
+        app:layout_constraintTop_toBottomOf="@+id/schoolname" />
+
+    <CheckBox
+        android:id="@+id/class4"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="class 4"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class1" />
+
+    <CheckBox
+        android:id="@+id/class3"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="17dp"
+        android:text="class 3"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/class2"
+        app:layout_constraintTop_toBottomOf="@+id/schoolname" />
+
+    <CheckBox
+        android:id="@+id/class5"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="class 5"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/class4"
+        app:layout_constraintTop_toBottomOf="@+id/class2" />
+
+    <CheckBox
+        android:id="@+id/class6"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="class 6"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/class5"
+        app:layout_constraintTop_toBottomOf="@+id/class3" />
+
+    <CheckBox
+        android:id="@+id/class7"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="class 7"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class4" />
+
+    <CheckBox
+        android:id="@+id/class8"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="class 8"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/class7"
+        app:layout_constraintTop_toBottomOf="@+id/class5" />
+
+    <CheckBox
+        android:id="@+id/class9"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="class 9"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/class8"
+        app:layout_constraintTop_toBottomOf="@+id/class6" />
+
+    <EditText
+        android:id="@+id/messagewindow"
+        android:layout_width="332dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Type Your Message"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="127dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Subject"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/class7" />
+
+    <Button
+        android:id="@+id/send"
+
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/buttonshap"
+        android:shadowColor="#A8234B"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="25"
+        android:text="Send"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messagewindow" />
+
+</android.support.constraint.ConstraintLayout>
